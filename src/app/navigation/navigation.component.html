@@ -1,1 +1,1 @@
-<app-feed [feed]="currentFeed"></app-feed>
+<app-feed *ngFor="let feed of feeds" [feed]="feed"></app-feed>
