@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reader-pane.component.css']
 })
 export class ReaderPaneComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
+    
   }
-
 }
