@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FeedComponent } from './feed.component';
+import { Channel } from '../model/feed';
 
 describe('FeedComponent', () => {
   let component: FeedComponent;
@@ -16,6 +17,12 @@ describe('FeedComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(FeedComponent);
     component = fixture.componentInstance;
+
+    component.feed = {
+      source: 'https://www.test.com',
+      channel: new Channel()
+    };
+
     fixture.detectChanges();
   });
 
